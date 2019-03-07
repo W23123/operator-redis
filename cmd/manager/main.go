@@ -7,8 +7,8 @@ import (
 	"os"
 	"runtime"
 
-	"Users/dongbin/go/src/redis-operator/pkg/apis"
-	"Users/dongbin/go/src/redis-operator/pkg/controller"
+	"redis-operator/pkg/apis"
+	"redis-operator/pkg/controller"
 
 	"github.com/operator-framework/operator-sdk/pkg/k8sutil"
 	"github.com/operator-framework/operator-sdk/pkg/leader"

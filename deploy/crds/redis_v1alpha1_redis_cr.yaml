@@ -1,0 +1,14 @@
+apiVersion: redis.fit2cloud.com/v1alpha1
+kind: Redis
+metadata:
+  name: example-redis
+spec:
+  password: dongbin
+  config: "appendonly yes \n maxmemory 2mb \n maxmemory-policy allkeys-lru"
+  ports:
+    - targetPort: 46379
+      port: 6379
+  volume:
+    name: redis-storage
+    persistentVolumeClaim:
+      claimName: redis-pvc
